@@ -204,7 +204,7 @@ const Home = () => {
     <div className="page home-page">
       <section className="hero-section" ref={heroRef}>
         <div className="hero-text">
-          <p className="hero-greeting">hello 👋🏻,</p>
+          <p className="hero-greeting">Hello dev👋🏻,</p>
           <h1 className="hero-name">{'<Sarath here/>'}</h1>
           <p className="hero-sub">
             your average coffee enjoyer from Kerala trying to document the

@@ -49,7 +49,7 @@ const timeline = [
 const projects = [
   {
     title: "MovieDex",
-    desc: "React-based movie search app using Vite, Tailwind, and Appwrite.",
+    desc: " - React-based movie search app using Vite, Tailwind, and Appwrite.",
     tags: [
        { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
       { label: "Vite", bg: "rgb(59 130 246)", color: "rgb(255 255 255)"  },
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     title: "BrainBin",
-    desc: "Full-stack notes management app built for efficiency.",
+    desc: " - Built a full-stack note management application supporting CRUD operations with RESTful APIs and persistent MongoDB storage using Express.js and React. Implemented Redis-based API rate limiting and deployed the application using Render.",
     tags: [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
       { label: "Node.js", bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
@@ -74,7 +74,7 @@ const projects = [
   },
   {
     title: "Talent-IQ",
-    desc: "Live coding interview platform with real-time video & chat.",
+    desc: ` - Developed a full-stack interview platform with live coding, real-time video calls, and chat functionality. Integrated Stream.io API for real-time video and chat between interviewers and candidates also Implemented Clerk authentication for secure user login and session management`,
     tags: [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
       { label: "JavaScript", bg: "rgb(234 179 8)", color: "rgb(255 255 255)" },
