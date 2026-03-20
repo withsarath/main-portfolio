@@ -1,0 +1,374 @@
+/* Responsive Design - Tablet (768px and below) */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 15px;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .navbar {
+    padding: 12px 20px 8px;
+    margin-bottom: 24px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-left {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 22px;
+    margin-right: 0;
+  }
+
+  .nav-lists {
+    gap: 20px;
+  }
+
+  .nav-lists a {
+    font-size: 0.95rem;
+  }
+
+  .nav-source {
+    font-size: 0.9rem;
+  }
+
+  .hero-container {
+    min-height: 50vh;
+    padding: 30px 15px;
+  }
+
+  .hero-animation {
+    width: 350px;
+  }
+
+  .work-description {
+    font-size: 1rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .bio-showcase {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .bio-card {
+    width: 140px;
+  }
+
+  .bio-img {
+    width: 140px;
+    height: 72px;
+  }
+
+  .bio-card-caption {
+    font-size: 0.85rem;
+  }
+
+  .bio-card-desc {
+    font-size: 0.8rem;
+  }
+
+  .contact-cta {
+    padding: 12px 16px;
+    font-size: 0.95rem;
+  }
+
+  /* About component responsive */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image-container {
+    order: 1;
+    margin-left: 0;
+  }
+
+  .about-name {
+    font-size: 1.8rem;
+  }
+
+  .about-title {
+    font-size: 1.1rem;
+  }
+
+  .about-image {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Responsive Design - Mobile (480px and below) */
+@media (max-width: 480px) {
+  .app {
+    padding: 15px 10px;
+  }
+
+  .navbar {
+    padding: 10px 15px 6px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .nav-left {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-right: 0;
+  }
+
+  .nav-lists {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-lists a {
+    font-size: 0.9rem;
+  }
+
+  .nav-source {
+    font-size: 0.85rem;
+  }
+
+  .hero-container {
+    min-height: 40vh;
+    padding: 20px 10px;
+  }
+
+  .hero-animation {
+    width: 280px;
+  }
+
+  .work-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .work-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .bio-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .bio-timeline {
+    font-size: 0.9rem;
+  }
+
+  .bio-year {
+    font-size: 1.1em;
+  }
+
+  .bio-love {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .bio-heart {
+    font-size: 1.4em;
+  }
+
+  .bio-links-title {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .bio-showcase {
+    gap: 8px;
+  }
+
+  .bio-card {
+    width: 120px;
+  }
+
+  .bio-img {
+    width: 120px;
+    height: 62px;
+  }
+
+  .bio-card-caption {
+    font-size: 0.8rem;
+  }
+
+  .bio-card-desc {
+    font-size: 0.75rem;
+  }
+
+  .contact-title {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  .contact-cta {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  .contact-footer {
+    font-size: 0.85rem;
+  }
+
+  /* About component responsive */
+  .about-container {
+    padding: 25px 15px;
+    gap: 15px;
+  }
+
+  .about-name {
+    font-size: 1.6rem;
+  }
+
+  .about-title {
+    font-size: 1rem;
+  }
+
+  .about-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Responsive Design - Small Mobile (320px and below) */
+@media (max-width: 320px) {
+  .app {
+    padding: 10px 5px;
+  }
+
+  .navbar {
+    padding: 8px 10px 4px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .nav-lists {
+    gap: 12px;
+  }
+
+  .nav-lists a {
+    font-size: 0.85rem;
+  }
+
+  .hero-container {
+    min-height: 35vh;
+    padding: 15px 5px;
+  }
+
+  .hero-animation {
+    width: 220px;
+  }
+
+  .bio-showcase {
+    gap: 6px;
+  }
+
+  .bio-card {
+    width: 100px;
+  }
+
+  .bio-img {
+    width: 100px;
+    height: 52px;
+  }
+
+  .bio-card-caption {
+    font-size: 0.75rem;
+  }
+
+  .bio-card-desc {
+    font-size: 0.7rem;
+  }
+
+  /* About component responsive */
+  .about-container {
+    padding: 20px 10px;
+    gap: 12px;
+  }
+
+  .about-name {
+    font-size: 1.4rem;
+  }
+
+  .about-title {
+    font-size: 0.9rem;
+  }
+
+  .about-image {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Responsive Design - Large Desktop (1200px and above) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .navbar {
+    max-width: 1200px;
+  }
+
+  .hero-animation {
+    width: 500px;
+  }
+
+  .bio-showcase {
+    justify-content: flex-start;
+  }
+
+  .about-container {
+    max-width: 1000px;
+  }
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Better touch targets for mobile */
+@media (max-width: 768px) {
+  .nav-lists a,
+  .bio-social-list a,
+  .contact-cta {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Improve readability on high DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bio-img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
