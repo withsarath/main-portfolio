@@ -110,7 +110,7 @@ const hobbies = [
     desc: "Exploring modern UI/UX trends and improving design skills through real-world project interfaces.",
   },
   {
-    title: "☕ Coffee Ritual  ",
+    title: "☕ Coffee Ritual",
     desc: "Fun but will be the reason why I'm homeless",
   },
  

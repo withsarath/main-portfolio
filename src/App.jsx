@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -9,6 +8,7 @@ import "./App.css";
 
 const App = () => {
   return (
+    // * this will handle the browser route...
     <BrowserRouter>
       <div className="app">
         <div className="navbar-wrapper">

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap");
 
-/* ========== THEME TOKENS ========== */
+/* * ========== THEME TOKENS ========== */
 :root {
   /* --bg: #0d1117; */
   --bg: #000308;
@@ -30,7 +30,7 @@
   --accent-glow: rgba(109, 40, 217, 0.1);
 }
 
-/* ========== RESET ========== */
+/* * ========== RESET ========== */
 *, *::before, *::after {
   margin: 0; padding: 0; box-sizing: border-box;
 }
@@ -48,7 +48,7 @@ body {
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
-/* ========== LAYOUT ========== */
+/* * ========== LAYOUT ========== */
 .app {
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ img { max-width: 100%; display: block; }
   padding: 40px 24px 80px;
 }
 
-/* ========== NAVBAR ========== */
+/* * ========== NAVBAR ========== */
 .navbar {
   display: grid;
   grid-template-columns: 40px 1fr 40px;
@@ -79,7 +79,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
 }
 
-/* Full-width sticky wrapper */
+/* * Full-width sticky wrapper */
 .navbar-wrapper {
   position: sticky;
   top: 0;

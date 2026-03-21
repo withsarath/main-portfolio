@@ -58,7 +58,7 @@ const Terminal = () => {
   );
 };
 
-/* ── GitHub Stats (repos + contributions via calendar) ── */
+
 const GITHUB_USER = "withsarath";
 
 const GitHubStats = () => {
@@ -204,7 +204,7 @@ const Home = () => {
     <div className="page home-page">
       <section className="hero-section" ref={heroRef}>
         <div className="hero-text">
-          <p className="hero-greeting">Hello dev👋🏻,</p>
+          <p className="hero-greeting">Hello Stranger👋🏻,</p>
           <h1 className="hero-name">{'<Sarath here/>'}</h1>
           <p className="hero-sub">
             your average coffee enjoyer from Kerala trying to document the
