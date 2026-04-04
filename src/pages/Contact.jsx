@@ -20,7 +20,7 @@ const Contact = () => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
     setSending(true);
-    // Simulate send — replace with your EmailJS / Formspree endpoint
+    
     setTimeout(() => {
       setSending(false);
       setSent(true);

@@ -125,7 +125,7 @@ const GitHubStats = () => {
         </div>
       </div>
 
-      {/* Contribution calendar via ghchart.rshah.org */}
+      
       <div className="contrib-wrap">
         <p className="top-repos-label">Contribution Activity</p>
         <div className="contrib-img-wrap">

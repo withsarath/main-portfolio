@@ -111,10 +111,10 @@ const hobbies = [
   },
   {
     title: "☕ Coffee Ritual",
-    desc: "Fun but will be the reason why I'm homeless",
+    desc: "A daily ritual that fuels focus, deep work, and long coding sessions.",
   },
  
-  { title: "🎬 Anime & Story Analysis", desc: "Playing monopoly but with real money" },
+  { title: "🎬 Anime & Story Analysis", desc: "Breaking down stories, characters, and themes to understand what makes great narratives." },
 ];
 
 const About = () => (
@@ -233,7 +233,7 @@ const About = () => (
       </div>
     </div>
 
-    {/* HOBBIES — flat layout like Phillip's */}
+    
     <div className="about-two-col">
       <div className="col-label">Hobbies</div>
       <div className="hobbies-flat">
