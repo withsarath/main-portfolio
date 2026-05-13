@@ -17,13 +17,13 @@ const LINES = [
   { text: "$ interests.txt", delay: 2400, color: "#a78bfa" },
   {
     text: "→ MongoDB · Express.js · React · Node.js",
-    delay: 3000,
+    delay: 4000,
     color: "#60a5fa",
   },
-  { text: "→ Open Source · Clean Code", delay: 3500, color: "#60a5fa" },
-  { text: "$ git status", delay: 4400, color: "#a78bfa" },
-  { text: "→ always building something new", delay: 5000, color: "#34d399" },
-  { text: "$ _", delay: 6000, color: "#a78bfa", blink: true },
+  { text: "→ Open Source · Clean Code", delay: 5000, color: "#60a5fa" },
+  { text: "$ git status", delay: 6400, color: "#a78bfa" },
+  { text: "→ always building something new", delay: 7000, color: "#34d399" },
+  { text: "$ _", delay: 8400, color: "#a78bfa", blink: true },
 ];
 
 const Terminal = () => {
