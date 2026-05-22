@@ -48,13 +48,21 @@ const timeline = [
 
 const projects = [
   {
-    title: "MovieDex",
-    desc: " - React-based movie search app using Vite, Tailwind, and Appwrite.",
+    title: "BuyNext",
+    desc: "- Built a full-stack product store application with secure authentication, product management, and comment functionality using React, TypeScript, Express.js, and PostgreSQL. Designed RESTful APIs with Drizzle ORM and PostgreSQL, implementing relational schemas for users, products, and comments with proper database relationships.",
     tags: [
-       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
-      { label: "Vite", bg: "rgb(59 130 246)", color: "rgb(255 255 255)"  },
-      { label: "Appwrite", bg: "rgb(115 115 115 )", color:  "rgb(255 255 255)" },
-      { label: "Tailwind CSS", bg: "rgb(59 130 246)", color: "rgb(255 255 255)" },
+      { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
+      {
+        label: "Tailwind CSS",
+        bg: "rgb(59 130 246)",
+        color: "rgb(255 255 255)",
+      },
+      { label: "TypeScript", bg: "rgb(59 130 246)", color: "rgb(255 255 255)" },
+     { label: "Node.js", bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
+      { label: "Express", bg: "rgb(245 158 11)", color: "rgb(255 255 255)" },
+      { label: "PostgreSQL", bg: "rgb(245 158 11)", color: "rgb(255 255 255)" },
+      { label: "Drizzle ORM", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
+      { label: "Neon",  bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
     ],
     live: "https://movie-dex-pied.vercel.app/",
     github: "https://github.com/withsarath/MovieDex",
@@ -67,7 +75,11 @@ const projects = [
       { label: "Node.js", bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
       { label: "MongoDB", bg: "rgb(16 185 129)", color: "rgb(255 255 255)" },
       { label: "Express", bg: "rgb(245 158 11)", color: "rgb(255 255 255)" },
-      { label: "Tailwind CSS", bg: "rgb(59 130 246)", color: "rgb(255 255 255)"},
+      {
+        label: "Tailwind CSS",
+        bg: "rgb(59 130 246)",
+        color: "rgb(255 255 255)",
+      },
     ],
     live: "https://brainbin.onrender.com/",
     github: "https://github.com/withsarath/BrainBin",
@@ -79,7 +91,7 @@ const projects = [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
       { label: "JavaScript", bg: "rgb(234 179 8)", color: "rgb(255 255 255)" },
       { label: "Node.js", bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
-      { label: "Socket.io", bg:"rgb(249 115 22)", color: "rgb(255 255 255)" },
+      { label: "Socket.io", bg: "rgb(249 115 22)", color: "rgb(255 255 255)" },
     ],
     live: "https://talent-iq-knz5.onrender.com/",
     github: "https://github.com/withsarath/talent-IQ",
@@ -105,7 +117,7 @@ const hobbies = [
     title: "🛠️ Open Source",
     desc: "Contributing to projects and building in public",
   },
-   {
+  {
     title: "🎨 UI/UX Exploration",
     desc: "Exploring modern UI/UX trends and improving design skills through real-world project interfaces.",
   },
@@ -113,8 +125,11 @@ const hobbies = [
     title: "☕ Coffee Ritual",
     desc: "A daily ritual that fuels focus, deep work, and long coding sessions.",
   },
- 
-  { title: "🎬 Anime & Story Analysis", desc: "Breaking down stories, characters, and themes to understand what makes great narratives." },
+
+  {
+    title: "🎬 Anime & Story Analysis",
+    desc: "Breaking down stories, characters, and themes to understand what makes great narratives.",
+  },
 ];
 
 const About = () => (
@@ -233,7 +248,6 @@ const About = () => (
       </div>
     </div>
 
-    
     <div className="about-two-col">
       <div className="col-label">Hobbies</div>
       <div className="hobbies-flat">
