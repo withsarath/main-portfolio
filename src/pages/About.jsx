@@ -64,8 +64,8 @@ const projects = [
       { label: "Drizzle ORM", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
       { label: "Neon",  bg: "rgb(34 197 94)", color: "rgb(255 255 255)" },
     ],
-    live: "https://movie-dex-pied.vercel.app/",
-    github: "https://github.com/withsarath/MovieDex",
+    live: "https://buynext-production.up.railway.app/",
+    github: "https://github.com/withsarath/BuyNext",
   },
   {
     title: "BrainBin",
