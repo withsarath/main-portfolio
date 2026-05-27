@@ -1,5 +1,5 @@
 import computer from "../assets/Programming Computer.json";
-import resume from "../assets/Sarath.m-resume.pdf"
+import resume from "../assets/Sarath-resume.pdf"
 import Lottie from "lottie-react";
 
 const HeroSection = () => {
