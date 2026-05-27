@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import computer from "../assets/Programming Computer.json";
-import resume from "../assets/Sarathm-resume.pdf";
+import resume from "../assets/Sarath-resume.pdf";
 import {
   FiArrowRight,
   FiDownload,
