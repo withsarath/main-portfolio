@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Lottie from "lottie-react";
 import computer from "../assets/Programming Computer.json";
 import resume from "../assets/Sarath-resume.pdf";
+import useReveal from "../hooks/useReveal";
 import {
   FiArrowRight,
   FiDownload,
@@ -184,6 +185,16 @@ const GitHubStats = () => {
   );
 };
 
+/* ── Reveal Wrapper ── */
+const RevealWrapper = ({ children }) => {
+  const { ref, revealed } = useReveal();
+  return (
+    <div ref={ref} className={`reveal${revealed ? " revealed" : ""}`}>
+      {children}
+    </div>
+  );
+};
+
 /* ── Page ── */
 const Home = () => {
   const heroRef = useRef(null);
@@ -224,18 +235,22 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="home-section">
-        <div className="section-header">
-          <h2 className="section-title">Terminal</h2>
-        </div>
-        <Terminal />
+      <section className="home-section reveal-section">
+        <RevealWrapper>
+          <div className="section-header">
+            <h2 className="section-title">Terminal</h2>
+          </div>
+          <Terminal />
+        </RevealWrapper>
       </section>
 
-      <section className="home-section">
-        <div className="section-header">
-          <h2 className="section-title">GitHub</h2>
-        </div>
-        <GitHubStats />
+      <section className="home-section reveal-section">
+        <RevealWrapper>
+          <div className="section-header">
+            <h2 className="section-title">GitHub</h2>
+          </div>
+          <GitHubStats />
+        </RevealWrapper>
       </section>
     </div>
   );

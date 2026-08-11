@@ -1,5 +1,9 @@
 import React from "react";
 import profile from "../assets/Sarath-3.png";
+// import buynextImg from "../assets/buynext.png";
+// import brainbinImg from "../assets/brainbin.png";
+// import talentiqImg from "../assets/talent-iq.png";
+import useReveal from "../hooks/useReveal";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import {
   FaHtml5,
@@ -49,6 +53,7 @@ const timeline = [
 const projects = [
   {
     title: "BuyNext",
+    // img: buynextImg,
     desc: "- Built a full-stack product store application with secure authentication, product management, and comment functionality using React, TypeScript, Express.js, and PostgreSQL. Designed RESTful APIs with Drizzle ORM and PostgreSQL, implementing relational schemas for users, products, and comments with proper database relationships.",
     tags: [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
@@ -69,6 +74,7 @@ const projects = [
   },
   {
     title: "BrainBin",
+    // img: brainbinImg,
     desc: " - Built a full-stack note management application supporting CRUD operations with RESTful APIs and persistent MongoDB storage using Express.js and React. Implemented Redis-based API rate limiting and deployed the application using Render.",
     tags: [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
@@ -86,6 +92,7 @@ const projects = [
   },
   {
     title: "Talent-IQ",
+    // img: talentiqImg,
     desc: ` - Developed a full-stack interview platform with live coding, real-time video calls, and chat functionality. Integrated Stream.io API for real-time video and chat between interviewers and candidates also Implemented Clerk authentication for secure user login and session management`,
     tags: [
       { label: "React", bg: "rgb(6 182 212)", color: "rgb(255 255 255)" },
@@ -133,6 +140,19 @@ const hobbies = [
   },
 ];
 
+const RevealSection = ({ children, className = "", ...props }) => {
+  const { ref, revealed } = useReveal();
+  return (
+    <div
+      ref={ref}
+      className={`${className} reveal${revealed ? " revealed" : ""}`}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+};
+
 const About = () => (
   <div className="page about-page">
     {/* HEADER + BIO */}
@@ -156,7 +176,7 @@ const About = () => (
     </div>
 
     {/* TIMELINE */}
-    <div className="about-two-col">
+    <RevealSection className="about-two-col">
       <div className="col-label">Timeline</div>
       <div className="timeline-list">
         {timeline.map((t, i) => (
@@ -179,16 +199,21 @@ const About = () => (
           </div>
         ))}
       </div>
-    </div>
+    </RevealSection>
 
     {/* PROJECTS */}
-    <div className="about-two-col" id="projects">
+    <RevealSection className="about-two-col" id="projects">
       <div className="col-label">Projects</div>
       <div className="about-projects-list">
         {projects.map((p) => (
           <div className="about-project-row" key={p.title}>
             <div className="apr-info">
               <h3 className="apr-title">{p.title}</h3>
+              {p.img && (
+                <div className="apr-img-wrap">
+                  <img src={p.img} alt={p.title} className="apr-img" />
+                </div>
+              )}
               <p className="apr-desc">{p.desc}</p>
               <div className="project-tags">
                 {p.tags.map((t) => (
@@ -223,10 +248,10 @@ const About = () => (
           </div>
         ))}
       </div>
-    </div>
+    </RevealSection>
 
     {/* SKILLS */}
-    <div className="about-two-col">
+    <RevealSection className="about-two-col">
       <div className="col-label">Skills</div>
       <div className="skills-wrap">
         {skills.map((s) => {
@@ -247,9 +272,9 @@ const About = () => (
           );
         })}
       </div>
-    </div>
+    </RevealSection>
 
-    <div className="about-two-col">
+    <RevealSection className="about-two-col">
       <div className="col-label">Hobbies</div>
       <div className="hobbies-flat">
         {hobbies.map((h) => (
@@ -259,7 +284,7 @@ const About = () => (
           </div>
         ))}
       </div>
-    </div>
+    </RevealSection>
   </div>
 );
 

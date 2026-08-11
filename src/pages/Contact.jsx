@@ -9,23 +9,48 @@ const platforms = [
   { label: "GitHub",    sub: "@withsarath",             icon: FaGithub,   href: "https://github.com/withsarath" },
 ];
 
+const WEB3FORMS_KEY = import.meta.env.VITE_WEB3FORMS_KEY;
+
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
+  const [error, setError] = useState("");
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!form.name || !form.email || !form.message) return;
     setSending(true);
-    
-    setTimeout(() => {
+    setError("");
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_KEY,
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          subject: `New message from ${form.name} via Portfolio`,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setSent(true);
+        setForm({ name: "", email: "", message: "" });
+      } else {
+        setError(data.message || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Network error. Please check your connection and try again.");
+    } finally {
       setSending(false);
-      setSent(true);
-      setForm({ name: "", email: "", message: "" });
-    }, 1200);
+    }
   };
 
   return (
@@ -104,6 +129,11 @@ const Contact = () => {
                 required
               />
             </div>
+            {error && (
+              <div style={{ color: "#ff6b6b", fontSize: "0.875rem", marginBottom: "0.5rem" }}>
+                {error}
+              </div>
+            )}
             <button type="submit" className="btn btn-primary form-submit" disabled={sending}>
               {sending
                 ? <><span className="spinner" /> Sending…</>
