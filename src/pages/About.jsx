@@ -209,11 +209,11 @@ const About = () => (
           <div className="about-project-row" key={p.title}>
             <div className="apr-info">
               <h3 className="apr-title">{p.title}</h3>
-              {p.img && (
+              {/* {p.img && (
                 <div className="apr-img-wrap">
                   <img src={p.img} alt={p.title} className="apr-img" />
                 </div>
-              )}
+              )} */}
               <p className="apr-desc">{p.desc}</p>
               <div className="project-tags">
                 {p.tags.map((t) => (
